@@ -27,6 +27,12 @@ namespace DotnetIteration
    */
     public static IEnumerable<string> Yelling(List<string> words)
     {
+      var allCaps = new List<string>();
+        foreach (string word in words)
+        {
+          allCaps.Add(word.ToUpper());
+        }
+        return allCaps;
       throw new System.NotImplementedException();
     }
 
